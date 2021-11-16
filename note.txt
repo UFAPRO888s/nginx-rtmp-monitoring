@@ -35,3 +35,5 @@ ffmpeg -re -stream_loop 3  -i ./vid/ts2.mp4 -vcodec libx264 -profile:v main -pre
 ffmpeg -re -stream_loop 3  -i ./vid/ts3.mp4 -vcodec libx264 -profile:v main -preset:v medium -r 30 -g 60 -keyint_min 60 -sc_threshold 0 -b:v 2500k -maxrate 2500k -bufsize 2500k  -sws_flags lanczos+accurate_rnd -acodec aac -b:a 96k -ar 48000 -ac 2 -f flv rtmp://43.229.79.66:1935/stream/ufaxtest3
 ffmpeg -re -stream_loop 3  -i ./vid/as1.mp4 -vcodec libx264 -profile:v main -preset:v medium -r 30 -g 60 -keyint_min 60 -sc_threshold 0 -b:v 2500k -maxrate 2500k -bufsize 2500k  -sws_flags lanczos+accurate_rnd -acodec aac -b:a 96k -ar 48000 -ac 2 -f flv rtmp://43.229.79.66:1935/stream/ufaxtest4
 ffmpeg -re -stream_loop 3  -i ./vid/as2.mp4 -vcodec libx264 -profile:v main -preset:v medium -r 30 -g 60 -keyint_min 60 -sc_threshold 0 -b:v 2500k -maxrate 2500k -bufsize 2500k  -sws_flags lanczos+accurate_rnd -acodec aac -b:a 96k -ar 48000 -ac 2 -f flv rtmp://43.229.79.66:1935/stream/ufaxtest5
+
+http://your-server-ip:8080/live/$ufaxtest1.m3u8
