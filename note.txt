@@ -12,15 +12,15 @@ docker exec -it live-ufax-dashboard cat /usr/src/app/config.json
 
 ######
 
-$chmod +x setup.sh && ./setup.sh
+$chmod +x setup.sh && bash ./setup.sh
 
 # openLOGIN 
 http://your-server-ip:9991
 
-rtmp_server_url":"http://192.168.1.13:8080/stat.xml"
-rtmp_server_stream_url":"rtmp://192.168.1.13:1935/live/"
-hls_server_stream_url":"http://192.168.1.13:8080/live/"
-rtmp_server_control_url":"http://192.168.1.13:8080/control
+rtmp_server_url":"http://43.229.79.66:8080/stat.xml"
+rtmp_server_stream_url":"rtmp://43.229.79.66:1935/live/"
+hls_server_stream_url":"http://43.229.79.66:8080/live/"
+rtmp_server_control_url":"http://43.229.79.66:8080/control
 session_secret_key":"44e154a78486e639d263af5b23290a10649ec2f4d25d3063ec0fb29b1460ceea"
 
 
